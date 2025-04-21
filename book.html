@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@586&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <section id="" style="height: auto;">
+        
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand sour-gummy fs-4 text-white" href="#">SongBird Salon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ms-3">
+                <a class="nav-link active text-white sour-gummy" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-white sour-gummy" href="products.html">Store</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white sour-gummy" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white sour-gummy" href="book.html">Book a Service</a>
+              </li>
+              <li>
+                <button class="btn AccountBtn ms-3" onclick="window.location.href='profile.html'"><i class="fa-solid fa-user fa-lg" style="color: #000000;"></i>&nbsp;&nbsp;Ashlee</button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      
+      <div class="col-12 p-3">
+       <h2>Book Your Appointment</h2>
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-lg-8 col-12 p-4">
+                <div class="mb-3 d-flex">
+                    <input type="text" id="firstname" class="form-control bookinput" placeholder="First name">
+                    <input type="text" id="firstname" class="form-control bookinput ms-5" placeholder="Last Name">
+                </div>
+                <div class="mb-3 d-flex">
+                    <input type="tel" id="cpnumber" class="form-control bookinput" placeholder="Mobile Number">
+                    <input type="text" id="email" class="form-control bookinput ms-5" placeholder="Email">
+                </div>
+                <label for="username" class="form-label"><b>Services</b> </label>
+                <div class="mb-3 fs-6">
+                    <label for=""><b>Hair Services</b></label> <br>
+                    <input type="checkbox" id="haircut"> <label for="haircut">Haircut (Ladies, Men, Kids) </label><br>
+                    <input type="checkbox" id="haircolor"> <label for="haircolor">Hair Color (Full, Highlights, Balayage) </label><br>
+                    <input type="checkbox" id="hairrebond"> <label for="hairrebond">Hair Rebonding / Straightening </label><br>  
+                    <input type="checkbox" id="hairperm"> <label for="hairperm">Hair Perm / Curls </label><br>
+                    <input type="checkbox" id="hairtreatment"> <label for="hairtreatment">Hair Treatment / Deep Conditioning</label><br>
+                    <input type="checkbox" id="styling"> <label for="styling">Blow Dry & Styling</label> <br>
+                    <input type="checkbox" id="scalptreatment"> <label for="scalptreatment">Scalp Treatment </label><br>
+                    <input type="checkbox" id="hairextension"> <label for="hairextension">Hair Extensions (if available) </label><br>
+                    <label for=""><b>Nail Services</b></label> <br>
+                    <input type="checkbox" id="Classic"> <label for="Classic">Classic Manicure & Pedicure </label><br>
+                    <input type="checkbox" id="Gel"> <label for="Gel">Gel Manicure / Pedicure </label><br>
+                    <input type="checkbox" id="Art"> <label for="Art">Nail Art & Design</label>   <br>
+                    <input type="checkbox" id="Paraffin"> <label for="Paraffin">Paraffin Treatment</label>   <br>
+                    <input type="checkbox" id="Extensions"> <label for="Extensions">Nail Extensions / Acrylic Nails</label>   <br>
+                    <label for=""><b>Makeup Services</b></label> <br>
+                    <input type="checkbox" id="Day&Evening"><label for="Day&Evening">Day & Evening Makeup</label>  <br>
+                    <input type="checkbox" id="Special"><label for="Special">Special Occasion / Event Makeup</label>   <br>
+                    <input type="checkbox" id="Bridal"><label for="Bridal">Bridal Makeup Package</label>   <br>
+                    <input type="checkbox" id="Trial"><label for="Trial">Trial Makeup Session</label>   <br>
+
+                </div>
+                <label for=""><b>Request</b></label> <br>
+                <div class="mb-3 d-flex">
+                    
+                    <textarea class="form-control bookinput" id="exampleFormControlTextarea1" rows="3" placeholder="message..."></textarea>
+                </div>
+                <label for=""><b>Appointment Date & Time</b></label> <br>
+                <div class="mb-3 d-flex">
+                    
+                    <input type="datetime-local" style="height: 50px;" class="bookinput">
+                </div>
+                <div class="mb-3 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-primary bookbutton">Book</button>
+                </div>
+                
+            </div>
+         
+           
+            
+        
+
+    </div>
+</div>
+      
+        
+           
+
+        
+    </section>
+
+    <footer class="footer p-5 mt-3">
+
+    
+
+      <div class="container h-100">
+        <div class="row">
+          
+          <div class="col-lg-12 col-sm-12 mt-2" style="text-align: center;">
+            <p class="text-white fs-1 sour-gummy">SongBird Salon</p>
+            <p>© 2025 – SongBird’s Salon. All rights reserved.
+            </p>
+            <a href="aboutus.html" class="text-reset text-decoration-none">About</a><br>
+            <a href="ServicePolicies.html" class="text-reset text-decoration-none">Service Policies</a><br>
+            <a href="privacy.html" class="text-reset text-decoration-none">Privacy Policy</a><br>
+            <a href="how.html" class="text-reset text-decoration-none">How It Works</a><br>
+            <a href="termsANDcondition.html" class="text-reset text-decoration-none">Terms & Conditions</a><br>
+            <a href="Etiquette.html" class="text-reset text-decoration-none">Salon Etiquette</a><br>
+          </div>
+          
+  
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+
+   
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

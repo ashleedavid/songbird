@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@586&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body >
+    <section id="loginBg">
+        <div class="container h-100">
+
+            <div class="row h-100 d-flex justify-content-center align-items-center">
+                <div class="row p-0" style="min-height: 700px;">
+                    <div class="col-lg-8 d-none d-lg-block" id="loginphoto2" style="min-height: 700px;">
+                      <h1 class="overlayHeader">Welcome Back!</h1>
+                      <p class="overlayparagraph">Log in to manage your bookings, view your past appointments,<br> and keep track of your favorite services.</p>
+
+                    </div>
+                    <div class="col-lg-4 bg-white d-flex justify-content-center align-items-center" style="min-height: 700px;">
+                        <div class="login-box bg-white">
+                            <h3 class="text-center mb-4">Login</h3>
+                            <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" id="username" class="form-control custom-input">
+                            </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control custom-input">
+                            </div>
+                            <div class="d-grid">
+                            <button onclick="login()" class="btn btn-primary w-100">Log In</button>
+                            </div>
+                            <a href="recover.html" class="text-reset text-decoration-none mt-5">Lost access? Recover it here</a>
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center mt-5">
+                              <button onclick="window.location.href='createAccount.html'" class="btn btn-primary">Sign Up</button>
+                              </div>
+                           
+                            <p id="login-message" class="text-center mt-3 text-danger"></p>
+                               </div>
+                        
+                        
+
+                    </div>
+                    
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+      
+      
+      
+    
+
+    </section>
+
+
+    <script>
+        function login() {
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          const message = document.getElementById("login-message");
+    
+          
+          const validUsername = "ashlee";
+          const validPassword = "12345";
+    
+          if (username === validUsername && password === validPassword) {
+            message.style.color = "green";
+            
+            window.location.href = "homepage.html";
+          } else {
+            message.textContent = "Invalid username or password.";
+          }
+        }
+      </script>
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
